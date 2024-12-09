@@ -1,4 +1,4 @@
-name: Build custom NGINX image
+name: Build custom NGINX image (Alpine)
 
 on:
   workflow_dispatch:
@@ -13,8 +13,8 @@ on:
         type: boolean
 
 jobs:
-  build_nginx:
-    name: Build Custom NGINX image
+  build_nginx_alpine:
+    name: Build Custom NGINX image (Alpine)
 
     env:
       BUILD_NAME: Custom NGINX
