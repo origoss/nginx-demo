@@ -38,7 +38,7 @@ jobs:
           echo "OUTPUT_IMAGE_REGISTRY=${OUTPUT_IMAGE_REGISTRY}" >> $GITHUB_ENV
           echo "OUTPUT_IMAGE=${OUTPUT_IMAGE_REGISTRY}${OUTPUT_IMAGE_REGISTRY:+/}${OUTPUT_IMAGE_REPO_NGINX}" >> $GITHUB_ENV
           echo "BASE_IMAGE_TAG=${{ inputs.nginx_version }}${{ env.SUBVERSION }}" >> $GITHUB_ENV
-          echo "OUTPUT_IMAGE_TAG=${{ inputs.nginx_version }}" >> $GITHUB_ENV
+          echo "OUTPUT_IMAGE_TAG=${{ inputs.nginx_version }}${{ env.SUBVERSION }}" >> $GITHUB_ENV
 
       - name: Print info
         run: |
